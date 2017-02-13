@@ -59,31 +59,13 @@
 
 
 
-<meta name="description" content="注：刚接触KIF,以下为我用到的方法,纯属个人浅层理解
-方法命名方法的命名必须以test开头，测试运行时，系统会寻找所有以“test”开头的方法，按照字母顺序运行，我一般以“test00”、“test01”……作为方法命名开头
-API介绍
-- (void)beforeAll; 
-
-beforeAll 是一个实际上只是在所有测试运行之前被调用一次的特殊方法. 你可以为你这里运行的测试设置任何实体变量">
 <meta property="og:type" content="article">
-<meta property="og:title" content="KIF基础使用">
-<meta property="og:url" content="http://yoursite.com/2017/02/07/KIF基础使用/index.html">
+<meta property="og:title" content="test">
+<meta property="og:url" content="http://yoursite.com/2017/02/13/test/index.html">
 <meta property="og:site_name" content="云润iOS团队技术博客">
-<meta property="og:description" content="注：刚接触KIF,以下为我用到的方法,纯属个人浅层理解
-方法命名方法的命名必须以test开头，测试运行时，系统会寻找所有以“test”开头的方法，按照字母顺序运行，我一般以“test00”、“test01”……作为方法命名开头
-API介绍
-- (void)beforeAll; 
-
-beforeAll 是一个实际上只是在所有测试运行之前被调用一次的特殊方法. 你可以为你这里运行的测试设置任何实体变量">
-<meta property="og:updated_time" content="2017-02-13T08:36:00.000Z">
+<meta property="og:updated_time" content="2017-02-13T07:54:08.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="KIF基础使用">
-<meta name="twitter:description" content="注：刚接触KIF,以下为我用到的方法,纯属个人浅层理解
-方法命名方法的命名必须以test开头，测试运行时，系统会寻找所有以“test”开头的方法，按照字母顺序运行，我一般以“test00”、“test01”……作为方法命名开头
-API介绍
-- (void)beforeAll; 
-
-beforeAll 是一个实际上只是在所有测试运行之前被调用一次的特殊方法. 你可以为你这里运行的测试设置任何实体变量">
+<meta name="twitter:title" content="test">
 
 
 
@@ -101,7 +83,7 @@ beforeAll 是一个实际上只是在所有测试运行之前被调用一次的�
   };
 </script>
 
-  <title> KIF基础使用 | 云润iOS团队技术博客 | 云润大数据 </title>
+  <title> test | 云润iOS团队技术博客 | 云润大数据 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -230,7 +212,7 @@ beforeAll 是一个实际上只是在所有测试运行之前被调用一次的�
             
             
               
-                KIF基础使用
+                test
               
             
           </h1>
@@ -242,14 +224,14 @@ beforeAll 是一个实际上只是在所有测试运行之前被调用一次的�
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-02-07T16:15:05+08:00" content="2017-02-07">
-              2017-02-07
+            <time itemprop="dateCreated" datetime="2017-02-13T15:54:08+08:00" content="2017-02-13">
+              2017-02-13
             </time>
           </span>
 
           <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-           <author href="/authors/dsh">
-             <span itemprop="name"> &nbsp; | &nbsp; 作者:dsh</span>
+           <author href="/authors/">
+             <span itemprop="name"> &nbsp; | &nbsp; 作者:</span>
            </author>
           </span>
 
@@ -259,8 +241,8 @@ beforeAll 是一个实际上只是在所有测试运行之前被调用一次的�
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2017/02/07/KIF基础使用/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/07/KIF基础使用/" itemprop="commentsCount"></span>
+                <a href="/2017/02/13/test/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/13/test/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -282,106 +264,7 @@ beforeAll 是一个实际上只是在所有测试运行之前被调用一次的�
       
 
       
-        <p>注：刚接触KIF,以下为我用到的方法,纯属个人浅层理解</p>
-<h3 id="方法命名"><a href="#方法命名" class="headerlink" title="方法命名"></a>方法命名</h3><p>方法的命名必须以test开头，测试运行时，系统会寻找所有以“test”开头的方法，按照字母顺序运行，我一般以“test00”、“test01”……作为方法命名开头</p>
-<h3 id="API介绍"><a href="#API介绍" class="headerlink" title="API介绍"></a>API介绍</h3><ul>
-<li>- (void)beforeAll; </li>
-</ul>
-<p>beforeAll 是一个实际上只是在所有测试运行之前被调用一次的特殊方法. 你可以为你这里运行的测试设置任何实体变量和初始化条件.</p>
-<ul>
-<li>- (void)afterAll;</li>
-</ul>
-<p>afterAll 是在所有测试运行完成后被调用一次的特殊方法</p>
-<h4 id="视图点击"><a href="#视图点击" class="headerlink" title="视图点击"></a>视图点击</h4><p>最常用的方法为：</p>
-<ul>
-<li>- (void)tapViewWithAccessibilityLabel:(NSString *)label;</li>
-</ul>
-<p>它使用在给定的可访问标签上模拟在视图上的触击. 在大多数情况下，可访问标签都是匹配诸如按钮这种组件的可视的文本标签，否则则需要手动设置访问标签</p>
-<p>eg.</p>
-<p>设置访问标签</p>
-<pre><code>[btn setAccessibilityLabel:@&quot;test&quot;];
-</code></pre><p>设置视图点击</p>
-<pre><code>[tester tapViewWithAccessibilityLabel:@&quot;test&quot;];
-</code></pre><h4 id="tableview相关测试"><a href="#tableview相关测试" class="headerlink" title="tableview相关测试"></a>tableview相关测试</h4><h5 id="测试row的点击"><a href="#测试row的点击" class="headerlink" title="测试row的点击"></a>测试row的点击</h5><ul>
-<li>- (void)tapRowAtIndexPath:(NSIndexPath <em>)indexPath inTableViewWithAccessibilityIdentifier:(NSString </em>)identifier;</li>
-</ul>
-<p>eg.</p>
-<pre><code>- (void)testTapRow
-{
-    NSIndexPath *cellPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [tester tapRowAtIndexPath:cellPath inTableViewWithAccessibilityIdentifier:@&quot;TableView&quot;];
-}
-</code></pre><ul>
-<li>- (void)tapRowAtIndexPath:(NSIndexPath <em>)indexPath inTableView:(UITableView </em>)tableView;</li>
-</ul>
-<p>eg.</p>
-<pre><code>- (void)testTapRow
-{
-    UITableView *tableView;
-    [tester waitForAccessibilityElement:NULL view:&amp;tableView withIdentifier:@&quot;TableView&quot; tappable:NO];
-    [tester waitForAnimationsToFinish];
-    NSIndexPath *cellPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [tester tapRowAtIndexPath:cellPath inTableView:tableView];
-}
-
-以下方法为等待视图出现，默认超时未10s
-- (void)waitForAccessibilityElement:(UIAccessibilityElement **)element view:(out UIView **)view withIdentifier:(NSString *)identifier tappable:(BOOL)mustBeTappable;
-</code></pre><h5 id="测试刷新"><a href="#测试刷新" class="headerlink" title="测试刷新"></a>测试刷新</h5><ul>
-<li>- (void)pullToRefreshViewWithAccessibilityLabel:(NSString *)label pullDownDuration:(KIFPullToRefreshTiming) pullDownDuration;</li>
-</ul>
-<p>eg.</p>
-<pre><code>[tester pullToRefreshViewWithAccessibilityLabel:@&quot;TableView&quot; pullDownDuration:KIFPullToRefreshInAboutOneSecond];
-</code></pre><h5 id="测试滑动"><a href="#测试滑动" class="headerlink" title="测试滑动"></a>测试滑动</h5><p>horizontalFraction:水平方向 verticalFraction:垂直方向<br>数值为-1~1，越接近0，速度越慢</p>
-<ul>
-<li>- (void)scrollViewWithAccessibilityIdentifier:(NSString *)identifier byFractionOfSizeHorizontal:(CGFloat)horizontalFraction vertical:(CGFloat)verticalFraction;</li>
-</ul>
-<p>eg.</p>
-<pre><code>[tester scrollViewWithAccessibilityIdentifier:@&quot;TableView&quot; byFractionOfSizeHorizontal:0 vertical:-0.2];
-</code></pre><h5 id="cell左滑删除"><a href="#cell左滑删除" class="headerlink" title="cell左滑删除"></a>cell左滑删除</h5><ul>
-<li>- (void)swipeViewWithAccessibilityLabel:(NSString *)label inDirection:(KIFSwipeDirection)direction;</li>
-</ul>
-<p>eg.</p>
-<pre><code>[tester swipeViewWithAccessibilityLabel:@&quot;Section 0 Row 0&quot; inDirection:KIFSwipeDirectionLeft];
-[tester tapViewWithAccessibilityLabel:@&quot;Delete&quot;];
-</code></pre><h4 id="slider设值"><a href="#slider设值" class="headerlink" title="slider设值"></a>slider设值</h4><ul>
-<li>- (void)setValue:(float)value forSliderWithAccessibilityLabel:(NSString *)label;</li>
-</ul>
-<p>eg.</p>
-<pre><code>[tester setValue:2 forSliderWithAccessibilityLabel:@&quot;Slider&quot;];
-</code></pre><h4 id="switch开关"><a href="#switch开关" class="headerlink" title="switch开关"></a>switch开关</h4><ul>
-<li>- (void)setOn:(BOOL)switchIsOn forSwitchWithAccessibilityLabel:(NSString *)label;</li>
-</ul>
-<p>eg.</p>
-<pre><code>[tester setOn:NO forSwitchWithAccessibilityLabel:@&quot;Switch&quot;];
-</code></pre><h4 id="picker"><a href="#picker" class="headerlink" title="picker"></a>picker</h4><ul>
-<li>- (void)selectPickerViewRowWithTitle:(NSString *)title;</li>
-</ul>
-<p>eg.</p>
-<pre><code>[tester selectPickerViewRowWithTitle:@&quot;Charlie&quot;];
-</code></pre><h4 id="文本输入"><a href="#文本输入" class="headerlink" title="文本输入"></a>文本输入</h4><ul>
-<li>- (void)enterText:(NSString <em>)text intoViewWithAccessibilityLabel:(NSString </em>)label;</li>
-</ul>
-<p>eg.</p>
-<pre><code>[tester enterText:@&quot;内容&quot; intoViewWithAccessibilityLabel:@&quot;TextField&quot;];
-</code></pre><h4 id="等待视图出现"><a href="#等待视图出现" class="headerlink" title="等待视图出现"></a>等待视图出现</h4><ul>
-<li>- (UIView <em>)waitForViewWithAccessibilityLabel:(NSString </em>)label;</li>
-</ul>
-<p>eg.</p>
-<pre><code>[tester waitForViewWithAccessibilityLabel:@&quot;TextField&quot;];
-</code></pre><h4 id="访问权限允许"><a href="#访问权限允许" class="headerlink" title="访问权限允许"></a>访问权限允许</h4><ul>
-<li>- (BOOL)acknowledgeSystemAlert;</li>
-</ul>
-<h4 id="延时"><a href="#延时" class="headerlink" title="延时"></a>延时</h4><ul>
-<li>- (void)waitForTimeInterval:(NSTimeInterval)timeInterval;</li>
-</ul>
-<p>eg.</p>
-<pre><code>[tester waitForTimeInterval:3.0f];
-</code></pre><h4 id="设置超时时间"><a href="#设置超时时间" class="headerlink" title="设置超时时间"></a>设置超时时间</h4><ul>
-<li>- (instancetype)usingTimeout:(NSTimeInterval)executionBlockTimeout;</li>
-</ul>
-<p>eg.</p>
-<pre><code>[[tester usingTimeout:20] waitForViewWithAccessibilityLabel:@&quot;TableView&quot;];
-</code></pre>
+        
       
     </div>
 
@@ -398,17 +281,13 @@ beforeAll 是一个实际上只是在所有测试运行之前被调用一次的�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/23/iOS-Jenkins-Gogs-Git自动化打包集成方案/" rel="next" title="iOS-Jenkins-Gogs-Git自动化打包集成方案">
-                <i class="fa fa-chevron-left"></i> iOS-Jenkins-Gogs-Git自动化打包集成方案
+              <a href="/2017/02/07/KIF基础使用/" rel="next" title="KIF基础使用">
+                <i class="fa fa-chevron-left"></i> KIF基础使用
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/02/13/test/" rel="prev" title="test">
-                test <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -434,8 +313,8 @@ beforeAll 是一个实际上只是在所有测试运行之前被调用一次的�
            
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/02/07/KIF基础使用/"
-           data-title="KIF基础使用" data-url="http://yoursite.com/2017/02/07/KIF基础使用/">
+      <div class="ds-thread" data-thread-key="2017/02/13/test/"
+           data-title="test" data-url="http://yoursite.com/2017/02/13/test/">
       </div>
     
   </div>
@@ -538,7 +417,7 @@ beforeAll 是一个实际上只是在所有测试运行之前被调用一次的�
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法命名"><span class="nav-number">1.</span> <span class="nav-text">方法命名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#API介绍"><span class="nav-number">2.</span> <span class="nav-text">API介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#视图点击"><span class="nav-number">2.1.</span> <span class="nav-text">视图点击</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tableview相关测试"><span class="nav-number">2.2.</span> <span class="nav-text">tableview相关测试</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#测试row的点击"><span class="nav-number">2.2.1.</span> <span class="nav-text">测试row的点击</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#测试刷新"><span class="nav-number">2.2.2.</span> <span class="nav-text">测试刷新</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#测试滑动"><span class="nav-number">2.2.3.</span> <span class="nav-text">测试滑动</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#cell左滑删除"><span class="nav-number">2.2.4.</span> <span class="nav-text">cell左滑删除</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#slider设值"><span class="nav-number">2.3.</span> <span class="nav-text">slider设值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#switch开关"><span class="nav-number">2.4.</span> <span class="nav-text">switch开关</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#picker"><span class="nav-number">2.5.</span> <span class="nav-text">picker</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文本输入"><span class="nav-number">2.6.</span> <span class="nav-text">文本输入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#等待视图出现"><span class="nav-number">2.7.</span> <span class="nav-text">等待视图出现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#访问权限允许"><span class="nav-number">2.8.</span> <span class="nav-text">访问权限允许</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#延时"><span class="nav-number">2.9.</span> <span class="nav-text">延时</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置超时时间"><span class="nav-number">2.10.</span> <span class="nav-text">设置超时时间</span></a></li></ol></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
