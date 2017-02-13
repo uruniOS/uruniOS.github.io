@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>云润iOS团队技术博客</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-02-10T01:36:19.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>云润大数据</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>KIF基础使用</title>
+    <link href="http://yoursite.com/2017/02/07/KIF%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2017/02/07/KIF基础使用/</id>
+    <published>2017-02-07T08:15:05.000Z</published>
+    <updated>2017-02-10T01:36:19.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;注：刚接触KIF,以下为我用到的方法,纯属个人浅层理解&lt;/p&gt;
+&lt;h3 id=&quot;方法命名&quot;&gt;&lt;a href=&quot;#方法命名&quot; class=&quot;headerlink&quot; title=&quot;方法命名&quot;&gt;&lt;/a&gt;方法命名&lt;/h3&gt;&lt;p&gt;方法的命名必须以test开头，测试运行时，系统会寻找所
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://yoursite.com/2017/02/06/test/"/>
+    <id>http://yoursite.com/2017/02/06/test/</id>
+    <published>2017-02-06T09:15:30.000Z</published>
+    <updated>2017-02-13T03:27:52.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>iOS-Jenkins-Gogs-Git自动化打包集成方案</title>
+    <link href="http://yoursite.com/2017/01/23/iOS-Jenkins-Gogs-Git%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85%E9%9B%86%E6%88%90%E6%96%B9%E6%A1%88/"/>
+    <id>http://yoursite.com/2017/01/23/iOS-Jenkins-Gogs-Git自动化打包集成方案/</id>
+    <published>2017-01-23T07:30:52.000Z</published>
+    <updated>2017-02-13T03:27:52.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;放弃手动打包，拥抱自动化&lt;/p&gt;
+&lt;h2 id=&quot;搭建Jenkins环境&quot;&gt;&lt;a href=&quot;#搭建Jenkins环境&quot; class=&quot;headerlink&quot; title=&quot;搭建Jenkins环境&quot;&gt;&lt;/a&gt;搭建Jenkins环境&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://jenkins.io/index.html&quot;&gt;下载Jenkins.war安装包&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&quot;&gt;下载JDK&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;有两个版本：LTS Release、Weekly Release&lt;br&gt;我选择的是LTS Release&lt;/p&gt;
+&lt;p&gt;下载完成之后，放到合适的目录，进入目录，执行&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="jenkins、自动化、git" scheme="http://yoursite.com/tags/jenkins%E3%80%81%E8%87%AA%E5%8A%A8%E5%8C%96%E3%80%81git/"/>
+    
+  </entry>
+  
+</feed>
