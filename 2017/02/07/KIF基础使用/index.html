@@ -61,29 +61,20 @@
 
 <meta name="description" content="注：刚接触KIF,以下为我用到的方法,纯属个人浅层理解
 方法命名方法的命名必须以test开头，测试运行时，系统会寻找所有以“test”开头的方法，按照字母顺序运行，我一般以“test00”、“test01”……作为方法命名开头
-API介绍
-- (void)beforeAll; 
-
-beforeAll 是一个实际上只是在所有测试运行之前被调用一次的特殊方法. 你可以为你这里运行的测试设置任何实体变量">
+API介绍">
 <meta property="og:type" content="article">
 <meta property="og:title" content="KIF基础使用">
 <meta property="og:url" content="http://yoursite.com/2017/02/07/KIF基础使用/index.html">
 <meta property="og:site_name" content="云润iOS团队技术博客">
 <meta property="og:description" content="注：刚接触KIF,以下为我用到的方法,纯属个人浅层理解
 方法命名方法的命名必须以test开头，测试运行时，系统会寻找所有以“test”开头的方法，按照字母顺序运行，我一般以“test00”、“test01”……作为方法命名开头
-API介绍
-- (void)beforeAll; 
-
-beforeAll 是一个实际上只是在所有测试运行之前被调用一次的特殊方法. 你可以为你这里运行的测试设置任何实体变量">
-<meta property="og:updated_time" content="2017-02-13T10:44:08.000Z">
+API介绍">
+<meta property="og:updated_time" content="2017-02-15T04:04:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="KIF基础使用">
 <meta name="twitter:description" content="注：刚接触KIF,以下为我用到的方法,纯属个人浅层理解
 方法命名方法的命名必须以test开头，测试运行时，系统会寻找所有以“test”开头的方法，按照字母顺序运行，我一般以“test00”、“test01”……作为方法命名开头
-API介绍
-- (void)beforeAll; 
-
-beforeAll 是一个实际上只是在所有测试运行之前被调用一次的特殊方法. 你可以为你这里运行的测试设置任何实体变量">
+API介绍">
 
 
 
@@ -248,8 +239,8 @@ beforeAll 是一个实际上只是在所有测试运行之前被调用一次的�
           </span>
 
           <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-           <author href="/authors/dsh">
-             <span itemprop="name"> &nbsp; | &nbsp; 作者:dsh</span>
+           <author href="/authors/">
+             <span itemprop="name"> &nbsp; | &nbsp; 作者:</span>
            </author>
           </span>
 
@@ -284,7 +275,8 @@ beforeAll 是一个实际上只是在所有测试运行之前被调用一次的�
       
         <p>注：刚接触KIF,以下为我用到的方法,纯属个人浅层理解</p>
 <h3 id="方法命名"><a href="#方法命名" class="headerlink" title="方法命名"></a>方法命名</h3><p>方法的命名必须以test开头，测试运行时，系统会寻找所有以“test”开头的方法，按照字母顺序运行，我一般以“test00”、“test01”……作为方法命名开头</p>
-<h3 id="API介绍"><a href="#API介绍" class="headerlink" title="API介绍"></a>API介绍</h3><ul>
+<h3 id="API介绍"><a href="#API介绍" class="headerlink" title="API介绍"></a>API介绍</h3><a id="more"></a>
+<ul>
 <li>- (void)beforeAll; </li>
 </ul>
 <p>beforeAll 是一个实际上只是在所有测试运行之前被调用一次的特殊方法. 你可以为你这里运行的测试设置任何实体变量和初始化条件.</p>
@@ -296,7 +288,7 @@ beforeAll 是一个实际上只是在所有测试运行之前被调用一次的�
 <ul>
 <li>- (void)tapViewWithAccessibilityLabel:(NSString *)label;</li>
 </ul>
-<p>它使用在给定的可访问标签上模拟在视图上的触击. 在大多数情况下，可访问标签都是匹配诸如按钮这种组件的可视的文本标签，否则则需要手动设置访问标签</p>
+<p>它使用在给定的可访问标签上模拟在视图上的触击. 在大多数情况下，可访问标签都是匹配诸如按钮这种组件的可视的文本标签，否则需要手动设置访问标签</p>
 <p>eg.</p>
 <p>设置访问标签</p>
 <pre><code>[btn setAccessibilityLabel:@&quot;test&quot;];
@@ -358,6 +350,11 @@ beforeAll 是一个实际上只是在所有测试运行之前被调用一次的�
 </ul>
 <p>eg.</p>
 <pre><code>[tester selectPickerViewRowWithTitle:@&quot;Charlie&quot;];
+</code></pre><ul>
+<li>- (void)selectPickerViewRowWithTitle:(NSString *)title inComponent:(NSInteger)component</li>
+</ul>
+<p>eg.</p>
+<pre><code>[tester selectPickerViewRowWithTitle:@&quot;1月&quot; inComponent:1];
 </code></pre><h4 id="文本输入"><a href="#文本输入" class="headerlink" title="文本输入"></a>文本输入</h4><ul>
 <li>- (void)enterText:(NSString <em>)text intoViewWithAccessibilityLabel:(NSString </em>)label;</li>
 </ul>
@@ -368,6 +365,11 @@ beforeAll 是一个实际上只是在所有测试运行之前被调用一次的�
 </ul>
 <p>eg.</p>
 <pre><code>[tester waitForViewWithAccessibilityLabel:@&quot;TextField&quot;];
+</code></pre><h4 id="等待视图消失"><a href="#等待视图消失" class="headerlink" title="等待视图消失"></a>等待视图消失</h4><ul>
+<li>- (void)waitForAbsenceOfViewWithAccessibilityLabel:(NSString *)label</li>
+</ul>
+<p>eg.</p>
+<pre><code>[tester waitForAbsenceOfViewWithAccessibilityLabel:@&quot;正在刷新数据中...&quot;];
 </code></pre><h4 id="访问权限允许"><a href="#访问权限允许" class="headerlink" title="访问权限允许"></a>访问权限允许</h4><ul>
 <li>- (BOOL)acknowledgeSystemAlert;</li>
 </ul>
@@ -405,10 +407,6 @@ beforeAll 是一个实际上只是在所有测试运行之前被调用一次的�
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/02/13/tessdkj/" rel="prev" title="tessdkj">
-                tessdkj <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -480,7 +478,7 @@ beforeAll 是一个实际上只是在所有测试运行之前被调用一次的�
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -538,7 +536,7 @@ beforeAll 是一个实际上只是在所有测试运行之前被调用一次的�
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法命名"><span class="nav-number">1.</span> <span class="nav-text">方法命名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#API介绍"><span class="nav-number">2.</span> <span class="nav-text">API介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#视图点击"><span class="nav-number">2.1.</span> <span class="nav-text">视图点击</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tableview相关测试"><span class="nav-number">2.2.</span> <span class="nav-text">tableview相关测试</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#测试row的点击"><span class="nav-number">2.2.1.</span> <span class="nav-text">测试row的点击</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#测试刷新"><span class="nav-number">2.2.2.</span> <span class="nav-text">测试刷新</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#测试滑动"><span class="nav-number">2.2.3.</span> <span class="nav-text">测试滑动</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#cell左滑删除"><span class="nav-number">2.2.4.</span> <span class="nav-text">cell左滑删除</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#slider设值"><span class="nav-number">2.3.</span> <span class="nav-text">slider设值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#switch开关"><span class="nav-number">2.4.</span> <span class="nav-text">switch开关</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#picker"><span class="nav-number">2.5.</span> <span class="nav-text">picker</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文本输入"><span class="nav-number">2.6.</span> <span class="nav-text">文本输入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#等待视图出现"><span class="nav-number">2.7.</span> <span class="nav-text">等待视图出现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#访问权限允许"><span class="nav-number">2.8.</span> <span class="nav-text">访问权限允许</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#延时"><span class="nav-number">2.9.</span> <span class="nav-text">延时</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置超时时间"><span class="nav-number">2.10.</span> <span class="nav-text">设置超时时间</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法命名"><span class="nav-number">1.</span> <span class="nav-text">方法命名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#API介绍"><span class="nav-number">2.</span> <span class="nav-text">API介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#视图点击"><span class="nav-number">2.1.</span> <span class="nav-text">视图点击</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tableview相关测试"><span class="nav-number">2.2.</span> <span class="nav-text">tableview相关测试</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#测试row的点击"><span class="nav-number">2.2.1.</span> <span class="nav-text">测试row的点击</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#测试刷新"><span class="nav-number">2.2.2.</span> <span class="nav-text">测试刷新</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#测试滑动"><span class="nav-number">2.2.3.</span> <span class="nav-text">测试滑动</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#cell左滑删除"><span class="nav-number">2.2.4.</span> <span class="nav-text">cell左滑删除</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#slider设值"><span class="nav-number">2.3.</span> <span class="nav-text">slider设值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#switch开关"><span class="nav-number">2.4.</span> <span class="nav-text">switch开关</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#picker"><span class="nav-number">2.5.</span> <span class="nav-text">picker</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文本输入"><span class="nav-number">2.6.</span> <span class="nav-text">文本输入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#等待视图出现"><span class="nav-number">2.7.</span> <span class="nav-text">等待视图出现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#等待视图消失"><span class="nav-number">2.8.</span> <span class="nav-text">等待视图消失</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#访问权限允许"><span class="nav-number">2.9.</span> <span class="nav-text">访问权限允许</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#延时"><span class="nav-number">2.10.</span> <span class="nav-text">延时</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置超时时间"><span class="nav-number">2.11.</span> <span class="nav-text">设置超时时间</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

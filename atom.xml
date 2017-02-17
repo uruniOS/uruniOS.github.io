@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-13T10:47:34.000Z</updated>
+  <updated>2017-02-15T04:04:52.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,44 +16,17 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>90998</title>
-    <link href="http://yoursite.com/2017/02/13/90998/"/>
-    <id>http://yoursite.com/2017/02/13/90998/</id>
-    <published>2017-02-13T10:47:34.000Z</published>
-    <updated>2017-02-13T10:47:34.000Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>tessdkj</title>
-    <link href="http://yoursite.com/2017/02/13/tessdkj/"/>
-    <id>http://yoursite.com/2017/02/13/tessdkj/</id>
-    <published>2017-02-13T10:45:27.000Z</published>
-    <updated>2017-02-13T10:45:27.000Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>KIF基础使用</title>
     <link href="http://yoursite.com/2017/02/07/KIF%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/"/>
     <id>http://yoursite.com/2017/02/07/KIF基础使用/</id>
     <published>2017-02-07T08:15:05.000Z</published>
-    <updated>2017-02-13T10:44:08.000Z</updated>
+    <updated>2017-02-15T04:04:52.000Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;注：刚接触KIF,以下为我用到的方法,纯属个人浅层理解&lt;/p&gt;
-&lt;h3 id=&quot;方法命名&quot;&gt;&lt;a href=&quot;#方法命名&quot; class=&quot;headerlink&quot; title=&quot;方法命名&quot;&gt;&lt;/a&gt;方法命名&lt;/h3&gt;&lt;p&gt;方法的命名必须以test开头，测试运行时，系统会寻找所
+&lt;h3 id=&quot;方法命名&quot;&gt;&lt;a href=&quot;#方法命名&quot; class=&quot;headerlink&quot; title=&quot;方法命名&quot;&gt;&lt;/a&gt;方法命名&lt;/h3&gt;&lt;p&gt;方法的命名必须以test开头，测试运行时，系统会寻找所有以“test”开头的方法，按照字母顺序运行，我一般以“test00”、“test01”……作为方法命名开头&lt;/p&gt;
+&lt;h3 id=&quot;API介绍&quot;&gt;&lt;a href=&quot;#API介绍&quot; class=&quot;headerlink&quot; title=&quot;API介绍&quot;&gt;&lt;/a&gt;API介绍&lt;/h3&gt;
     
     </summary>
     
